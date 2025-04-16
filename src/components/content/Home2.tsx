@@ -1,7 +1,7 @@
 import React from 'react';
 import { Logo } from '@interfaces/common';
 
-interface HomeProps {
+type HomeProps = {
     logo: Logo;
 }
 

@@ -1,13 +1,12 @@
 import React from 'react';
+import {Projects} from '@interfaces/common';
 
-interface Project2Props {
-    img: string;
-    alt: string;
-    title: string;
-    description: string;
+interface ProjectProps {
+    project:Projects;
 }
 
-const Project: React.FC<Project2Props> = ({img, alt, title, description}) => {
+const Project: React.FC<ProjectProps> = ({project}) => {
+    const {img,alt,title,description} = project;
     return (
         <>
             <img className="project__img" src={img} alt={alt} />

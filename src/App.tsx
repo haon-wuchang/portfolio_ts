@@ -62,7 +62,7 @@ function App() {
   //자식 컴포넌트 맵
   const componentMap: Record<string, React.ElementType> = {
       Majors2,
-      Jobs2,
+      // Jobs2,
       Skills2,
       Coding2,
       Article2,
@@ -112,7 +112,7 @@ function App() {
       <Footer>
         <Top2
           title="Let's talk"
-          description="jeon.developer.judy@gmail.com"
+          description="haoony@gmail.com"
           />
         <ContactLinks2 />
         <Bottom2 />

@@ -1,17 +1,17 @@
-import React from 'react';
+import React,{useState} from 'react';
+import { Category } from '@interfaces/common'
 
-interface Category2Props {
-    name: string;
-    count: number;
+type CategoryProps = {
+    category: Category; 
     style: string;
     click: (name: string) => void;
 }
 
-const Category2: React.FC<Category2Props> = ({name, count, style, click}) => {
+const Category2: React.FC<CategoryProps> = ({category,style,click}) => {
     return (
         <button className={style}
-                onClick={()=>{click(name)} }
-        >{name}<span className="category__count">{count}</span></button>
+            onClick={()=>{click(category.name)}}
+        >{category.name}<span className="category__count">{category.count}</span></button>
     );
 }
 
